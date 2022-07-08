@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-%m%z*1-q3(le8o@9x8_$8bo2oj66dkv*fdgkxi9vmpqwjg_85d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CSRF_COOKIE_SECURE=False
 ALLOWED_HOSTS = ['*']
 
 
@@ -79,9 +80,9 @@ DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
        'NAME': 'opsiseyeplus',
-       'USER': 'postgres',
-       'PASSWORD': '0079',
-       'HOST': 'localhost',
+       'USER': 'opsiseyeplus',
+       'PASSWORD': 'opsiseyeplus',
+       'HOST': 'database-1.cldug4ijejoo.us-east-2.rds.amazonaws.com',
        'PORT': '5432',
    }
 }
